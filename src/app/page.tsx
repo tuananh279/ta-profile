@@ -1,113 +1,44 @@
-import Image from "next/image";
+import NavbarRoot from "./components/NavbarRoot";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main className="container m-auto min-h-screen">
+      <NavbarRoot />
+      <section id="profile">
+        <h1>Profile</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maiores nisi et, sunt impedit ratione provident vel ullam neque voluptas quae explicabo ipsum aliquid non quidem atque asperiores magnam facilis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in temporibus voluptates. Commodi perspiciatis exercitationem illum atque ex? Quod enim debitis accusamus earum, illum quasi et sunt maxime esse repellendus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, rem porro. Suscipit ex debitis alias officia quis, vitae, minus a veniam incidunt magni temporibus adipisci vel, porro sint quo eum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veritatis quas inventore quo tenetur sequi aliquam pariatur odit ea. Commodi tempore laborum corporis aut optio maiores quis veniam eaque quaerat.
+      </section>
+      <section id="experience">
+        <h1>Experience</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque doloribus quisquam dolore repellat a eum sed sunt placeat aspernatur ut, culpa iste architecto commodi enim dolor asperiores animi mini
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis natus, sed ea sit nam tempora iste, ipsam ullam officiis dicta praesentium doloribus blanditiis voluptates eveniet rerum pariatur, doloremque nobis.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, recusandae? Neque error, autem pariatur, mollitia tempora doloribus qui consectetur, quae corrupti sapiente officia? Accusamus nobis quia sequi fuga exercitationem consectetur.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita excepturi illum dolores harum voluptatum odio nihil in officia, doloremque, nostrum veritatis consequatur repudiandae eaque incidunt voluptatem sapiente, rerum quis.ma.
+      </section>
+      <section id="skill">
+        <h1>Skill</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat itaque ipsam repellendus iusto illum nihil. Reprehenderit culpa possimus dolores quasi quam maxime, quo eligendi optio sed eius aliquam deleniti?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cumque quo aspernatur dolorem quam cupiditate consequuntur quidem nostrum odio voluptatibus sint sequi, earum inventore error, veniam sed eos sunt ratione?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque distinctio et, accusantium alias perspiciatis, qui aspernatur provident eos iusto nam fugit, dolore laudantium labore? Cum amet eaque enim corporis dolore!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus reprehenderit optio harum veniam provident repellat beatae est. Quia inventore voluptate assumenda velit explicabo placeat? Rerum magnam cupiditate ut suscipit eligendi!
+      </section>
+      <section id="project">
+        <h1>Project</h1>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus harum odit quis ab, cumque dignissimos adipisci tempore a sequi! Corporis, neque saepe. Obcaecati, quod corporis? In tempore sint dolore dignissimos?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fuga numquam asperiores tempora error incidunt ratione minima. Maxime et, tenetur eius cum quia saepe debitis blanditiis ipsa est, quae aperiam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facilis vel expedita omnis voluptatum, dolorum eligendi non, quis ad, dolore nam nisi illum officiis delectus repellendus modi aliquid placeat perspiciatis.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quibusdam repellat nulla vitae inventore temporibus hic harum ipsa, nesciunt quaerat velit laborum delectus, explicabo consectetur neque accusantium maxime odio optio.
+      </section>
+      <section id="contact">
+        <h1>Contact</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, non deleniti pariatur cumque corrupti tempore, iure harum nemo aperiam nihil velit. Adipisci laudantium voluptatem amet fugiat aperiam aspernatur voluptas soluta!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste ea cumque dignissimos reprehenderit possimus ut earum incidunt doloribus nemo vero animi, voluptatibus inventore quod accusantium excepturi voluptate unde quasi. Ad?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, incidunt eos ducimus nostrum minus natus assumenda illo tempore molestiae voluptatibus magnam deleniti fugiat enim repudiandae a. Ad vero voluptatum amet?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur voluptates atque sapiente, excepturi dolorem nisi sed eligendi iusto reprehenderit itaque nam earum, velit laborum dolore nihil non ex enim?
+      </section>
     </main>
   );
 }
